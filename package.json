@@ -1,5 +1,5 @@
 {
-  "name": "lean-laas-cli",
+  "name": "npm-test-pkg",
   "version": "0.0.1",
   "description": "CommandLine Tool for Lean LaaS",
   "main": "dist/index.js",
