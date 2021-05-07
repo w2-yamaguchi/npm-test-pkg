@@ -1,7 +1,7 @@
 {
   "name": "npm-test-pkg",
   "version": "0.0.1",
-  "description": "CommandLine Tool for Lean LaaS",
+  "description": "CommandLine Tool for Dummy",
   "main": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
@@ -13,32 +13,47 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arumon-team/lean-laas-cli.git"
+    "url": "git+https://github.com/w2-yamaguchi/npm-test-pkg"
   },
   "keywords": [
-    "lean-laas",
-    "laas"
+    "npm-test-pkg"
   ],
-  "author": "arumon-team",
+  "author": "w2-yamaguchi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arumon-team/lean-laas-cli/issues"
+    "url": "https://github.com/w2-yamaguchi/npm-test-pkg/issues"
   },
-  "homepage": "https://github.com/arumon-team/lean-laas-cli#readme",
+  "homepage": "https://github.com/w2-yamaguchi/npm-test-pkg#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@types/commander": "^2.12.2",
-    "@types/node": "^13.13.5",
-    "@typescript-eslint/eslint-plugin": "^2.32.1-alpha.2",
-    "@typescript-eslint/parser": "^2.32.1-alpha.2",
-    "eslint": "^7.0.0",
+    "@types/node": "^13.13.51",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^7.25.0",
     "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "typescript": "^3.8.3"
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "semantic-release": "^17.4.2",
+    "typescript": "^3.9.9"
   },
   "dependencies": {
     "commander": "^5.1.0"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ],
+    "branches": [
+      "main"
+    ]
   }
 }
